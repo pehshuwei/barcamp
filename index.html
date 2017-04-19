@@ -1,315 +1,316 @@
+<!--
+@license
+Copyright 2017 Peh Shu Wei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>BarCamp Cyberjaya 2017</title>
-		<link rel="stylesheet" type="text/css" href="style/style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">	
-		<link href="image/favicon.ico" rel="shortcut icon">
-	    <meta content="https://www.barcampcyberjaya.org/" property="og:url">
-	    <meta content="https://www.barcampcyberjaya.org/img/opengraph.jpg" property="og:image">
-	    <meta content="BarCamp is a user-generated unconference focused around technology. They are open, participatory workshop-events, the content of which is provided by participants. Happening on 5th August 2017." property="og:description">
-	    <script type="application/ld+json">
-	        {
-	  "@context": "http://schema.org",
-	  "@type": "Event",
-	  "name": "BarCamp Cyberjaya 2017",
-	  "startDate" : "2017-08-05T12:00+0800",
-	  "endDate" : "2017-08-05T18:00+0800",
-	  "url" : "https://www.barcampcyberjaya.org/",
-	  "location" : {
-	    "@type" : "Place",
-	    "sameAs" : "http://fci.mmu.edu.my",
-	    "name" : "Faculty of Computing & Informatics",
-	    "address" : "Multimedia University, Persiaran Multimedia, 63100 Cyberjaya, Selangor"
-	  },
-	  "description": "Unconference that focuses on technology, programming, and entrepreneurship.",
-	  "image": "https://www.barcampcyberjaya.org/img/opengraph.jpg"
-	}
-	    </script>		
-	</head>
 
-	<body>
-		<nav class="page_scroll">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BarCamp Cyberjaya 2017</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link href="image/favicon.ico" rel="shortcut icon">
 
-			<div class="drawer">
-				<div class="drawer-container">
-					<a href="#about" onClick="toggleDrawer()">About</a>
-					<a href="#venue" onClick="toggleDrawer()">Venue</a>
-					<a href="#proposed-talks" onClick="toggleDrawer()">Proposed Talks</a>
-					<a href="#about" onClick="toggleDrawer()">FAQ</a>
-					<a href="#sponsors" onClick="toggleDrawer()">Sponsors</a>	
-					<a href="#" onClick="toggleDrawer()">Register Now</a>
-				</div>
-				<div class="scrim" onClick="toggleDrawer()"></div>
+
+	<meta charset="UTF-8">
+	<meta content="BarCamp Cyberjaya 2017" property="og:title">
+	<meta content="https://www.barcampcyberjaya.org/" property="og:url">
+	<meta content="https://www.barcampcyberjaya.org/image/opengraph.jpg" property="og:image">
+	<meta content="BarCamp is a user-generated unconference focused around technology. They are open, participatory workshop-events, the content of which is provided by participants. Happening on 5th August 2017." property="og:description">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Event",
+			"name": "BarCamp Cyberjaya 2017",
+			"startDate" : "2017-08-05T09:00+0800",
+			"endDate" : "2017-08-05T18:00+0800",
+			"url" : "https://www.barcampcyberjaya.org/",
+			"location" : {
+				"@type" : "Place",
+				"sameAs" : "http://fci.mmu.edu.my",
+				"name" : "Faculty of Computing & Informatics",
+				"address" : "Multimedia University, Persiaran Multimedia, 63100 Cyberjaya, Selangor"
+			},
+			"description": "Unconference that focuses on technology, programming, and entrepreneurship.",
+			"image": "https://www.barcampcyberjaya.org/img/opengraph.jpg"
+		}
+	</script>
+</head>
+
+<body>
+	<nav class="page_scroll">
+		<div class="drawer">
+			<div class="drawer-container">
+				<a href="#about" onClick="toggleDrawer()">About</a>
+				<a href="#venue" onClick="toggleDrawer()">Venue</a>
+				<a href="#proposed-talks" onClick="toggleDrawer()">Proposed Talks</a>
+				<a href="#about" onClick="toggleDrawer()">FAQ</a>
+				<a href="#sponsors" onClick="toggleDrawer()">Sponsors</a>
+				<a href="#" target="_blank" onClick="toggleDrawer()" rel="noopener">Register Now</a>
 			</div>
-
-
-			<div class="nav-bar">
-				<ul id="nav">
-					<li id="nav-about">
-						<a href="#about">ABOUT</a>
-					</li>
-					<li id="nav-venue">
-						<a href="#venue">VENUE</a>
-					</li>
-					<li id="nav-proposed-talks">
-						<a href="#proposed-talks">PROPOSED TALKS</a>
-					</li>
-					<li id="nav-faq">
-						<a href="#faq">FAQ</a>
-					</li>
-					<li id="nav-sponsor">
-						<a href="#sponsors">SPONSORS</a>
-					</li>
-					<li id="nav-register">
-						<a href="#" class="border-btn">REGISTER NOW</a>
-					</li>
-				</ul>
-			</div>
-
-
-			<div class="nav-bar-mobile">
-				<svg onClick="toggleDrawer()" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><g>
-		        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-		      </g></svg>
-			</div>		
-
-
-		</nav>
-
-		<div id="home" class="container">
-			<div id="logo">
-				<img src="image/bc-logo.jpg"/>
-			</div>
-			<div id="slogan" class="row">
-				"BarCamp brings people together to share their passion!"
-			</div>
-			<div id="home-text" class="row">
-				<div id="date">5th August 2017</div></br>
-				<div id="location">Multimedia University, Cyberjaya</div>
-			</div>
-			<div id="button" class="row">
-					<a href="#" class="button">REGISTER NOW</a>
-			</div>
+			<div class="scrim" onClick="toggleDrawer()"></div>
 		</div>
-
-		<div id="about" class="container red-container">
-			<div class="row">
-				<h1>What Is BarCamp ?</h1>
-				<p>Unlike the typical conferences, BarCamp have no preset of speakers. BarCamp is an user-generated conferences primarily focused around technology and the web.</p>
-				<p>BarCamp participants get to:
-					<ul>
-						<li>choose who get to speak through voting</li>
-						<li>choose to be an audience or a speaker(propose a topic and get voted on)</li>
-						<li>choose which talks to attend</li>
-						<li>or even, choose to stay in the hall for board game or other activities</li>
-					</ul>
-				</p>
-				<p>That means, the speaker lineup is generated by everyone who comes (including you) on that day itself. We can't wait to see what everyone will share and learn during this BarCamp!
-				</p>
-				<p>BarCamp is <b>FREE</b> for all, open for public. So mari-mari come!
-				</p>
-			</div>
+		<div class="nav-bar">
+			<ul id="nav">
+				<li id="nav-about">
+					<a href="#about">ABOUT</a>
+				</li>
+				<li id="nav-venue">
+					<a href="#venue">VENUE</a>
+				</li>
+				<li id="nav-proposed-talks">
+					<a href="#proposed-talks">PROPOSED TALKS</a>
+				</li>
+				<li id="nav-faq">
+					<a href="#faq">FAQ</a>
+				</li>
+				<li id="nav-sponsor">
+					<a href="#sponsors">SPONSORS</a>
+				</li>
+				<li id="nav-register">
+					<a href="#" target="_blank" rel="noopener" class="border-btn">REGISTER NOW</a>
+				</li>
+			</ul>
 		</div>
-
-		<div id="venue" class="container">
-			<div class="row">
-				<h1 class="title">Venue</h1>
-				<div id="maps"></div>
-			</div>
-
-			<div class="row">
-				<div id="public" class="two-column">
-					<h2>Public Transport</h2>
-					<ol>
-						<li>Take KLIA Transit to <b>Putrajaya/Cyberjaya</b> station.</li>
-						<li>Take taxi to Multimedia University Faculty of Computing and Informatics, or</li>
-						<li>Take the bus Nadi Putra 520 to MMU.</li>
-					</ol>
-				</div>
-
-				<div id="driving" class="two-column">
-					<h2>Driving</h2>
-					<ol>
-						<li>Just find MMU Cyberjaya on your navigation app.</li>
-						<li>Once you are inside there will be road signs showing you where to park!</li>
-					</ol>
-				</div>
-			</div>
+		<div class="nav-bar-mobile">
+			<svg onClick="toggleDrawer()" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+				<g>
+					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+				</g>
+			</svg>
 		</div>
-
-		<div id="past" class="container">
-			<div class="slides">
-
-				<div class="image show"></div>
-				<div class="image"></div>
-				<div class="image"></div>
-				<div class="hover">PAST BARCAMPS</div>
-			</div>
+	</nav>
+	<div id="home" class="container">
+		<div id="logo">
+			<img src="image/bc-logo.svg" />
 		</div>
-
-		<div id="proposed-talks" class="container red-container">
-			<div class="row">
-				<h1 class="center">I Want To Give A Talk</h1>
-
-				<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbxUYE6OAUiX5mOLV_nKUpaha21DkGx5s2t-7pwi0PS_beFyBOUX/exec?callback=googleDocCallback" >
-					<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
-					<textarea class="input" name="topic" id="topic" placeholder="What Will You Be Talking About?" required></textarea></br>
-					<button type="submit" name="submit" id="submit">SUBMIT</button>
-
-					<div class="center">
-						<p class="small">Just to let others know what topic are you going to propose during event day and to avoid repeating of topics</p>
-						<div id="view">
-							<a href="https://goo.gl/Q1Smg8" target="blank">VIEW PROPOSED TOPICS</a>
-						</div>
-					</div>
-				</form>
-
-			</div>
+		<div id="slogan" class="row">
+			"BarCamp brings people together to share their passion!"
 		</div>
+		<div id="home-text" class="row">
+			<div id="date">5th August 2017</div>
+			</br>
+			<div id="location">Multimedia University, Cyberjaya</div>
+		</div>
+		<div id="button" class="row">
+			<a href="#" class="button">REGISTER NOW</a>
+		</div>
+	</div>
 
-		<div id="faq" class="container">
-			<div class="row">
-				<h1 class="title">Frequently Asked Questions</h1>
-				<h2>What can we talk about in BarCamp?</h2>
-				<p>Speakers are encouraged to conduct sessions that are related to technology, entrepreneurship, and education (coz we are in Cyberjaya and in university right?). But, you can also talk about any other topic that you like, as long as other participants vote on it.</p>
-				<p>Speakers should refrain from touching on sensitive topics such as politics and religions.</p>
-				<h2>How many tracks are there, and how long is each session?</h2>
-				<p>There will be 5 simultaneous tracks. Each session will be roughly 45 minutes long.</p>
-				<h2>What equipments are there at the venues and what do I need to bring?</h2>
-				<p>Each MMU FCI classroom is equipped with:</p>
+	<div id="about" class="container red-container">
+		<div class="row">
+			<h1>What Is BarCamp ?</h1>
+			<p>Unlike the typical conferences, BarCamp have no preset of speakers. BarCamp is an user-generated conferences primarily
+				focused around technology and the web.</p>
+			<p>BarCamp participants get to:
 				<ul>
-					<li>VGA Projector</li>
-					<li>WiFi Access Point</li>
-					<li>Power socket</li>
-					<li>Whiteboard and markers</li>
+					<li>choose who get to speak through voting</li>
+					<li>choose to be an audience or a speaker(propose a topic and get voted on)</li>
+					<li>choose which talks to attend</li>
+					<li>or even, choose to stay in the hall for board game or other activities</li>
 				</ul>
-				<p>If your device (such as MacBook or iPads) does not have VGA output, please bring your own VGA adapter.</p>
-				<h2>And foods?</h2>
-				<p>There will be free Halal lunch provided. Also, if you signed up as a vegan, we will do our best to make it easy for you.</p>
-			</div>
+			</p>
+			<p>That means, the speaker lineup is generated by everyone who comes (including you) on that day itself. We can't wait to
+				see what everyone will share and learn during this BarCamp!
+			</p>
+			<p>BarCamp is <b>FREE</b> for all, open for public. So mari-mari come!
+			</p>
+		</div>
+	</div>
+
+	<div id="venue" class="container">
+		<div class="row">
+			<h1 class="title">Venue</h1>
+			<div id="maps"></div>
 		</div>
 
-		<div id="sponsors" class="container">
-			<div class="row">
-				<h1 class="title center">SPONSORS &amp; PARTNERS</h1>
+		<div class="row">
+			<div id="public" class="two-column">
+				<h2>Public Transport</h2>
+				<ol>
+					<li>Take KLIA Transit to <b>Putrajaya/Cyberjaya</b> station.</li>
+					<li>Take taxi to Multimedia University Faculty of Computing and Informatics, or</li>
+					<li>Take the bus Nadi Putra 520 to MMU.</li>
+				</ol>
 			</div>
-			<div class="row">
+			<div id="driving" class="two-column">
+				<h2>Driving</h2>
+				<ol>
+					<li>Just find MMU Cyberjaya on your navigation app.</li>
+					<li>Once you are inside there will be road signs showing you where to park!</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div id="past" class="container">
+		<div class="slides">
+			<div class="image show"></div>
+			<div class="image"></div>
+			<div class="image"></div>
+			<a class="hover" href="#">PAST BARCAMPS</a>
+		</div>
+	</div>
+
+	<div id="proposed-talks" class="container red-container">
+		<div class="row">
+			<h1 class="center">I Want To Give A Talk</h1>
+			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbxUYE6OAUiX5mOLV_nKUpaha21DkGx5s2t-7pwi0PS_beFyBOUX/exec?callback=googleDocCallback">
+				<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
+				<textarea class="input" name="topic" id="topic" placeholder="What Will You Be Talking About?" required></textarea></br>
+				<button type="submit" name="submit" id="submit">SUBMIT</button>
 				<div class="center">
-					<a href="#"  class="border-btn">JOIN US</a>
+					<p class="small">Just to let others know what topic are you going to propose during event day and to avoid repeating of topics</p>
+					<div id="view">
+						<a href="https://goo.gl/Q1Smg8" target="_blank" rel="noopener">VIEW PROPOSED TOPICS</a>
+					</div>
 				</div>
+			</form>
+
+		</div>
+	</div>
+
+	<div id="faq" class="container">
+		<div class="row">
+			<h1 class="title">Frequently Asked Questions</h1>
+			<h2>What can we talk about in BarCamp?</h2>
+			<p>Speakers are encouraged to conduct sessions that are related to technology, entrepreneurship, and education (coz we are
+				in Cyberjaya and in university right?). But, you can also talk about any other topic that you like, as long as other
+				participants vote on it.</p>
+			<p>Speakers should refrain from touching on sensitive topics such as politics and religions.</p>
+			<h2>How many tracks are there, and how long is each session?</h2>
+			<p>There will be 5 simultaneous tracks. Each session will be roughly 45 minutes long.</p>
+			<h2>What equipments are there at the venues and what do I need to bring?</h2>
+			<p>Each MMU FCI classroom is equipped with:</p>
+			<ul>
+				<li>VGA Projector</li>
+				<li>WiFi Access Point</li>
+				<li>Power socket</li>
+				<li>Whiteboard and markers</li>
+			</ul>
+			<p>If your device (such as MacBook or iPads) does not have VGA output, please bring your own VGA adapter.</p>
+			<h2>And foods?</h2>
+			<p>There will be free Halal lunch provided. Also, if you signed up as a vegan, we will do our best to make it easy for you.</p>
+		</div>
+	</div>
+
+	<div id="sponsors" class="container">
+		<div class="row">
+			<h1 class="title center">SPONSORS &amp; PARTNERS</h1>
+		</div>
+		<div class="row">
+			<div class="center">
+				<a href="#" class="border-btn">JOIN US</a>
 			</div>
 		</div>
+	</div>
 
-		<footer class="red-container">
-			<div class="row">
-				<div class="center">
-					Organised by <b><a href="https://www.itsociety.rocks/" target="_blank">IT Society</a></b>
-				</div>				
+	<footer class="red-container">
+		<div class="row">
+			<div class="center">
+				Organised by <b><a href="https://www.itsociety.rocks/" target="_blank" rel="noopener">IT Society</a></b>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
-		<script type="text/javascript">
-			var slides = document.querySelectorAll('.slides .image');
-			var currentSlide = 0;
-			var slideInterval = setInterval(nextSlide,2000);
-			var map;
+	<script type="text/javascript">
+		var slides = document.querySelectorAll('.slides .image');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide, 2000);
+		var map;
 
-			function nextSlide() {
-				slides[currentSlide].className = 'image';
-				currentSlide = (currentSlide+1)%slides.length;
-				slides[currentSlide].className = 'image show';
-			}	
+		function nextSlide() {
+			slides[currentSlide].className = 'image';
+			currentSlide = (currentSlide + 1) % slides.length;
+			slides[currentSlide].className = 'image show';
+		}
 
-			function toggleDrawer(){
-				document.querySelector('.drawer').classList.toggle('show')
-			}
+		function toggleDrawer() {
+			document.querySelector('.drawer').classList.toggle('show')
+		}
 
-			function initMap() {
-
-				var myLatLng = {lat: 2.9276332, lng: 101.6418755};
-	        	// Create a map object and specify the DOM element for display.
-		        map = new google.maps.Map(document.getElementById('maps'), {
-		        	center: myLatLng,
-		        	scrollwheel: false,
-		        	zoom: 16
-		        });
-
-		        // Create a marker and set its position.
-		        var marker = new google.maps.Marker({
-		        	map: map,
-		        	position: myLatLng,
-		        	title: 'Hello World!'
-		        });        
-		    }
-			window.addEventListener('resize', function(event){
-				var center = map.getCenter();
-				google.maps.event.trigger(map, "resize");
-			 	map.setCenter(center);
+		function initMap() {
+			var myLatLng = { lat: 2.9276332, lng: 101.6418755 };
+			map = new google.maps.Map(document.getElementById('maps'), {
+				center: myLatLng,
+				scrollwheel: false,
+				zoom: 16
 			});
 
-		    function getFormData() {
-		    	var elements = document.getElementById("gform").elements;
-		    	var fields = Object.keys(elements).map(function(k) {
-		    		if(elements[k].name !== undefined) {
-		    			return elements[k].name;
-		    		}else if(elements[k].length > 0){
-		    			return elements[k].item(0).name;
-		    		}
-		    	}).filter(function(item, pos, self) {
-		    		return self.indexOf(item) == pos && item;
-		    	});
-		    	var data = {};
-		    	fields.forEach(function(k){
-		    		data[k] = elements[k].value;
-		    		if(elements[k].type === "checkbox"){
-		    			data[k] = elements[k].checked;
-		    		}else if(elements[k].length){
-		    			for(var i = 0; i < elements[k].length; i++){
-		    				if(elements[k].item(i).checked){
-		    					data[k] = elements[k].item(i).value;
-		    				}
-		    			}
-		    		}
-		    	});
-		    	return data;
-		    }
+			var marker = new google.maps.Marker({
+				map: map,
+				position: myLatLng,
+				title: 'Hello World!'
+			});
+		}
+		window.addEventListener('resize', function (event) {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
 
-		    function handleFormSubmit(event) {  
-		    	event.preventDefault();           
-		    	var data = getFormData();
-		    	document.querySelector('#submit').innerHTML = "Loading...";
-		    	document.querySelector('#submit').disabled = true;         
+		function getFormData() {
+			var elements = document.getElementById("gform").elements;
+			var fields = Object.keys(elements).map(function (k) {
+				if (elements[k].name !== undefined) {
+					return elements[k].name;
+				} else if (elements[k].length > 0) {
+					return elements[k].item(0).name;
+				}
+			}).filter(function (item, pos, self) {
+				return self.indexOf(item) == pos && item;
+			});
+			var data = {};
+			fields.forEach(function (k) {
+				data[k] = elements[k].value;
+				if (elements[k].type === "checkbox") {
+					data[k] = elements[k].checked;
+				} else if (elements[k].length) {
+					for (var i = 0; i < elements[k].length; i++) {
+						if (elements[k].item(i).checked) {
+							data[k] = elements[k].item(i).value;
+						}
+					}
+				}
+			});
+			return data;
+		}
 
-		    	var url = event.target.action;
-		    	var xhr = new XMLHttpRequest();
-		    	xhr.open('POST', url);
-		    	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-		    	xhr.onreadystatechange = function() {
-		    		document.querySelector('#submit').innerHTML = "Form Submitted. Thank You.";
-		    		document.getElementById('gform').reset();
-		    		document.querySelector('#submit').disabled = false;
-		    		return;
-		    	};
-		    	var encoded = Object.keys(data).map(function(k) {
-		    		return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
-		    	}).join('&')
-		    	xhr.send(encoded);
-		    }
-		    function loaded() {
-		    	var form = document.getElementById('gform');
-		    	form.addEventListener("submit", handleFormSubmit, false);
-		    };
-		    document.addEventListener('DOMContentLoaded', loaded, false);
+		function handleFormSubmit(event) {
+			event.preventDefault();
+			var data = getFormData();
+			document.querySelector('#submit').innerHTML = "Loading...";
+			document.querySelector('#submit').disabled = true;
 
-
+			var url = event.target.action;
+			var xhr = new XMLHttpRequest();
+			xhr.open('POST', url);
+			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+			xhr.onreadystatechange = function () {
+				document.querySelector('#submit').innerHTML = "Form Submitted. Thank You.";
+				document.getElementById('gform').reset();
+				document.querySelector('#submit').disabled = false;
+				return;
+			};
+			var encoded = Object.keys(data).map(function (k) {
+				return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+			}).join('&')
+			xhr.send(encoded);
+		}
+		function loaded() {
+			var form = document.getElementById('gform');
+			form.addEventListener("submit", handleFormSubmit, false);
+		};
+		document.addEventListener('DOMContentLoaded', loaded, false);
 	</script>
-
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U8DF1DFRqo-SbXZzcZ6rL0qzmOK57lA&callback=initMap"
-	async defer></script>		
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U8DF1DFRqo-SbXZzcZ6rL0qzmOK57lA&callback=initMap" async defer></script>
 </body>
 </html>
