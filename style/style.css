@@ -401,6 +401,11 @@ button:hover{
 	margin-bottom: 24px;
 }
 
+#sponsors .small{
+	color:  #E6292A;
+	font-weight: 400;
+}
+
 footer{
 	padding: 28px 0;
 	font-size: 1em;

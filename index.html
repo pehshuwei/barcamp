@@ -43,37 +43,39 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			"image": "https://www.barcampcyberjaya.org/img/opengraph.jpg"
 		}
 	</script>
+	<script src="dist/js/smooth-scroll.js"></script>
 </head>
 
 <body>
+	<!-- navigation -->
 	<nav class="page_scroll">
 		<div class="drawer">
 			<div class="drawer-container">
-				<a href="#about" onClick="toggleDrawer()">About</a>
-				<a href="#venue" onClick="toggleDrawer()">Venue</a>
-				<a href="#proposed-talks" onClick="toggleDrawer()">Proposed Talks</a>
-				<a href="#faq" onClick="toggleDrawer()">FAQ</a>
-				<a href="#sponsors" onClick="toggleDrawer()">Sponsors</a>
-				<a href="#" target="_blank" onClick="toggleDrawer()" rel="noopener" class="disabled">Coming Soon</a>
+				<a data-scroll href="#about" onClick="toggleDrawer()">About</a>
+				<a data-scroll href="#venue" onClick="toggleDrawer()">Venue</a>
+				<a data-scroll href="#proposed-talks" onClick="toggleDrawer()">Proposed Talks</a>
+				<a data-scroll href="#faq" onClick="toggleDrawer()">FAQ</a>
+				<a data-scroll href="#sponsors" onClick="toggleDrawer()">Sponsors</a>
+				<a data-scroll href="#" target="_blank" onClick="toggleDrawer()" rel="noopener" class="disabled">Coming Soon</a>
 			</div>
 			<div class="scrim" onClick="toggleDrawer()"></div>
 		</div>
 		<div class="nav-bar">
 			<ul id="nav">
 				<li id="nav-about">
-					<a href="#about">ABOUT</a>
+					<a data-scroll href="#about">ABOUT</a>
 				</li>
 				<li id="nav-venue">
-					<a href="#venue">VENUE</a>
+					<a data-scroll href="#venue">VENUE</a>
 				</li>
 				<li id="nav-proposed-talks">
-					<a href="#proposed-talks">PROPOSED TALKS</a>
+					<a data-scroll href="#proposed-talks">PROPOSED TALKS</a>
 				</li>
 				<li id="nav-faq">
-					<a href="#faq">FAQ</a>
+					<a data-scroll href="#faq">FAQ</a>
 				</li>
 				<li id="nav-sponsor">
-					<a href="#sponsors">SPONSORS</a>
+					<a data-scroll href="#sponsors">SPONSORS</a>
 				</li>
 				<li id="nav-register">
 					<a href="#" target="_blank" rel="noopener" class="border-btn disabled">COMING SOON</a>
@@ -88,6 +90,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			</svg>
 		</div>
 	</nav>
+
+	<!-- home -->
 	<div id="home" class="container">
 		<div id="logo">
 			<img src="image/bc-logo.svg" />
@@ -105,6 +109,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</div>
 	</div>
 
+	<!-- about -->
 	<div id="about" class="container red-container">
 		<div class="row">
 			<h1>What Is BarCamp ?</h1>
@@ -124,6 +129,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</div>
 	</div>
 
+	<!-- venue -->
 	<div id="venue" class="container">
 		<div class="row">
 			<h1 class="title">Venue</h1>
@@ -149,15 +155,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</div>
 	</div>
 
+	<!-- past barcamp photos -->
 	<div id="past" class="container">
 		<div class="slides">
 			<div class="image show"></div>
 			<div class="image"></div>
 			<div class="image"></div>
-			<a class="hover" href="http://bit.ly/bcpastphotos" target="_blank" rel="noopener">PAST BARCAMPS</a>
+			<a class="hover" href="http://bit.ly/bcpastphotos" target="_blank" rel="noopener">BARCAMPS 2015 &amp; 2016 PHOTOS</a>
 		</div>
 	</div>
 
+	<!-- proposed talks and form -->
 	<div id="proposed-talks" class="container red-container">
 		<div class="row">
 			<h1 class="center">I Want To Give A Talk</h1>
@@ -176,6 +184,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</div>
 	</div>
 
+	<!-- faq -->
 	<div id="faq" class="container">
 		<div class="row">
 			<h1 class="title">Frequently Asked Questions</h1>
@@ -200,11 +209,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</div>
 	</div>
 
+	<!-- sponsors -->
 	<div id="sponsors" class="container">
 		<div class="row">
 			<h1 class="title center">SPONSORS &amp; PARTNERS</h1>
 		</div>
 		<div class="row">
+			<div class="center">
+				<p class="small">Thinking to be one of our awesome sponsors?</p>
+			</div>
 			<div class="center">
 				<a href="#" class="border-btn disabled">JOIN US</a>
 			</div>
@@ -308,7 +321,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			form.addEventListener("submit", handleFormSubmit, false);
 		};
 		document.addEventListener('DOMContentLoaded', loaded, false);
+
+		smoothScroll.init();
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U8DF1DFRqo-SbXZzcZ6rL0qzmOK57lA&callback=initMap" async defer></script>
+
+	<!-- Live Chat Widget -->
+	<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#f44336" data-apps="JTdCJTIyZmFjZWJvb2slMjI6JTIyMjA2MzIyODQ5NDEyNTQ2JTIyLCUyMmVtYWlsJTIyOiUyMml0c29jLm1tdUBnbWFpbC5jb20lMjIlN0Q="></script>
 </body>
 </html>
