@@ -14,3 +14,7 @@ handlers:
 - url: /style/(.+)
   static_files: style/\1  
   upload: style/(.*)     
+
+- url: /js/(.+)
+  static_files: js/\1  
+  upload: js/(.*)       
