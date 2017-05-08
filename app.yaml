@@ -18,3 +18,7 @@ handlers:
 - url: /js/(.+)
   static_files: js/\1  
   upload: js/(.*)       
+
+- url: /sponsorshipkit.pdf
+  static_files: sponsorshipkit.pdf
+  upload: sponsorshipkit.pdf
