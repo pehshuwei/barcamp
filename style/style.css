@@ -397,6 +397,30 @@ button:hover{
 	background-color: #FAFAFA;
 }
 
+.sponsor-list{
+	width:  50%;	
+}
+
+.sponsor-logo{
+	width: 48%;
+	display: inline-block;
+	margin: 50px auto;
+}
+
+.sponsor-logo img{
+	display: block;
+	vertical-align: middle;
+	width:  80%;
+	margin:  0 auto;
+}
+/* temporarily
+ */
+.partner-logo{
+ 	width: 40%;
+	display: block;
+}
+
+
 #sponsors .border-btn{
 	margin-bottom: 24px;
 }
@@ -514,5 +538,17 @@ footer .center{
 		padding: 0px;
 		margin: 0px;
 		width: 100%;
+	}
+	.sponsor-list{
+		width: 80%;	
+		margin: 0 auto;
+	} 
+	.sponsor-logo{
+		width: 80%;
+		display: block;
+	}
+	.partner-logo{
+	 	width: 60%;
+		display: block;
 	}
 }
