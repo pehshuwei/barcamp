@@ -197,7 +197,7 @@ ul#nav li#nav-register a:hover{
 	margin: 48px auto 32px auto;
 }
 
-#logo img{
+#bclogo img{
 	display: block;
 	margin: 24px auto;
 	width: 90%;
@@ -397,34 +397,31 @@ button:hover{
 	background-color: #FAFAFA;
 }
 
-.sponsor-list{
+.logo-list{
 	width: 70%;	
 	margin:  0 auto;
 	text-align: center;
 }
 
-.sponsor-logo{
+.logo{
 	width: 24%;
 	display: inline-block;
 	margin: 50px 20px;
 }
 
-.sponsor-logo a{
+.logo a{
 	text-decoration: none;
 }
 
-.sponsor-logo img{
+.logo img{
 	vertical-align: middle;
 	width:  80%;
 	margin:  0px 20px;
 }
-/* temporarily
- */
-/* .partner-logo{
- 	width: 40%;
-	display: block;
+
+.logo img:hover{
+	opacity:  0.7;
 }
- */
 
 #sponsors .border-btn{
 	margin-bottom: 24px;
@@ -544,16 +541,12 @@ footer .center{
 		margin: 0px;
 		width: 100%;
 	}
-	.sponsor-list{
+	.logo-list{
 		width: 80%;	
 		margin: 0 auto;
 	} 
-	.sponsor-logo{
-		width: 80%;
+	.logo{
+		width: 70%;
 		display: block;
 	}
-/* 	.partner-logo{
-	 	width: 60%;
-		display: block;
-	} */
 }
