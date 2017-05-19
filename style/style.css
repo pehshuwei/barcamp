@@ -200,7 +200,7 @@ ul#nav li#nav-register a:hover{
 #bclogo img{
 	display: block;
 	margin: 24px auto;
-	width: 90%;
+	width: 90%;	
 	max-width: 760px;
 }
 
@@ -541,12 +541,12 @@ footer .center{
 		margin: 0px;
 		width: 100%;
 	}
-	.logo-list{
-		width: 80%;	
-		margin: 0 auto;
-	} 
 	.logo{
-		width: 70%;
-		display: block;
+		width: 40%;
+		margin: 20px 10px;
 	}
+	.logo img{
+		margin: 0px;
+	}
+
 }
