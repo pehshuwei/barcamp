@@ -398,28 +398,33 @@ button:hover{
 }
 
 .sponsor-list{
-	width:  50%;	
+	width: 60%;	
+	margin:  0 auto;
+	text-align: center;
 }
 
 .sponsor-logo{
-	width: 48%;
+	width: 32%;
 	display: inline-block;
 	margin: 50px auto;
 }
 
+.sponsor-logo a{
+	text-decoration: none;
+}
+
 .sponsor-logo img{
-	display: block;
 	vertical-align: middle;
 	width:  80%;
 	margin:  0 auto;
 }
 /* temporarily
  */
-.partner-logo{
+/* .partner-logo{
  	width: 40%;
 	display: block;
 }
-
+ */
 
 #sponsors .border-btn{
 	margin-bottom: 24px;
@@ -547,8 +552,8 @@ footer .center{
 		width: 80%;
 		display: block;
 	}
-	.partner-logo{
+/* 	.partner-logo{
 	 	width: 60%;
 		display: block;
-	}
+	} */
 }
