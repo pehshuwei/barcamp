@@ -290,17 +290,17 @@ ul#nav li#nav-register a:hover{
 }
 
 .image:nth-of-type(1) {
-	background: url(../image/bg1.jpg);
+	background: url(../img/bg1.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .image:nth-of-type(2) {
-	background: url(../image/bg2.jpg);
+	background: url(../img/bg2.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .image:nth-of-type(3) {
-	background: url(../image/bg3.jpg);
+	background: url(../img/bg3.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -398,15 +398,15 @@ button:hover{
 }
 
 .sponsor-list{
-	width: 60%;	
+	width: 70%;	
 	margin:  0 auto;
 	text-align: center;
 }
 
 .sponsor-logo{
-	width: 32%;
+	width: 24%;
 	display: inline-block;
-	margin: 50px auto;
+	margin: 50px 20px;
 }
 
 .sponsor-logo a{
@@ -416,7 +416,7 @@ button:hover{
 .sponsor-logo img{
 	vertical-align: middle;
 	width:  80%;
-	margin:  0 auto;
+	margin:  0px 20px;
 }
 /* temporarily
  */

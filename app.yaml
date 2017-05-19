@@ -7,9 +7,9 @@ handlers:
   static_files: index.html
   upload: index.html
 
-- url: /image/(.+)
-  static_files: image/\1  
-  upload: image/(.*)     
+- url: /img/(.+)
+  static_files: img/\1  
+  upload: img/(.*)     
 
 - url: /style/(.+)
   static_files: style/\1  
