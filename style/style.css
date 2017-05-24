@@ -406,7 +406,7 @@ button:hover{
 .logo{
 	width: 24%;
 	display: inline-block;
-	margin: 50px 20px;
+	margin: 30px;
 }
 
 .logo a{
@@ -415,7 +415,7 @@ button:hover{
 
 .logo img{
 	vertical-align: middle;
-	width:  80%;
+	width: 90%;
 	margin:  0px 20px;
 }
 
