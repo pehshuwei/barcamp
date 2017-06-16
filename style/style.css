@@ -29,10 +29,10 @@ a{
 	text-decoration: none;
 }
 
-.disabled {
+/* .disabled {
    pointer-events: none;
    cursor: inherit;
-}
+} */
 
 .container{
 	margin: 0 auto;
