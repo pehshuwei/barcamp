@@ -1,4 +1,5 @@
 body, .input{
+	background-color: #000;
 	font-family: Roboto ;
 	letter-spacing: 1px;
 	margin: 0 auto;
@@ -11,7 +12,7 @@ h1{
 }
 h2{
 	font-weight: normal;
-	color: #E6292A;
+	color: #7B4F9E;
 }
 p, #public ol li, #driving ol li{
 	font-size: 1rem;
@@ -38,6 +39,8 @@ a{
 	margin: 0 auto;
 	padding: 24px 0 36px 0;
 	position: relative;
+	background: #07223D;
+	color: #FFF;
 }
 
 .container#past{
@@ -70,7 +73,7 @@ a{
 	text-decoration: none;
 	display: block;
 	padding: 12px 16px;
-	color: #eb5252;	
+	color: #7B4F9E;	
 	transition: background-color 300ms ease-in-out;
 }
 
@@ -97,9 +100,9 @@ a{
 	opacity: 1;
 }
 
-.red-container{
-	background-color: #E6292A;
-	color: #fff;
+.white-container{
+	background-color: #fff;
+	color: #000;
 	font-weight: normal;
 }
 
@@ -111,8 +114,9 @@ a{
 nav.page_scroll{
 	position: fixed;
 	top: 0;
-	background-color: #fff;
-	border-bottom: 1px solid #E0E0E0;
+	background-color: #07223D;
+	opacity: 0.97;
+	border-bottom: 1px solid #07223D;
 	height: 64px;
 }
 
@@ -127,8 +131,8 @@ nav.page_scroll{
 }
 
 .nav-bar-mobile svg{
-	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
-	width: 24px;
+/* 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+ */	width: 24px;
 	margin: 0 24px;
 	cursor: pointer;
 }
@@ -156,58 +160,64 @@ ul#nav li{
 }
 
 ul#nav li a{
-	color: #E6292A;
+	color: #FFF;
 }
 
 ul#nav li a:hover{
-	color: #0C51A1;
+	color: #78C8D0;
 }
 
 ul#nav li#nav-register a:hover{
 	color: #FFF;
 }
 
-.border-btn{
-	color: #E6292A;
-	border: 2px solid #E6292A;
+.border-btn{/* 
+	color: #E6292A; */
+	border: 2px solid #78C8D0;
 	border-radius: 4px;
 	padding: 10px 20px;
 	transition: all 300ms ease-in-out;
 }
 
 .border-btn:hover{
-	box-shadow: 0 0 10px 5px #E0E0E0;
+	background-color: #6AC4AA;
+	border-color: #6AC4AA;
+	box-shadow: 0 0 10px 3px #E0E0E0;
+/* 	box-shadow: 0 0 10px 4px #E0E0E0;
 	color: #FFF;
-	background-color: #E6292A;
-}
+	background-color: #78C8D0;
+ */}
 
 .title{
-	color: #E6292A;
+	color: #7B4F9E;
+}
+
+.subtitle{
+	color: #FFF;
 }
 
 #home{
 	text-align: center;
-	color: #E6292A;
-	margin: 100px auto 0px auto;
+	color: #78C8D0;
+	margin: 0 auto;
 	min-height: calc(100vh - 100px);
-}
-
-#home .button{
-	min-width: 200px;
-	margin: 48px auto 32px auto;
 }
 
 #bclogo img{
 	display: block;
-	margin: 24px auto;
-	width: 90%;	
-	max-width: 760px;
+	margin: 10px auto;
+	width: 100%;	
+} 
+
+#home .button{
+	min-width: 200px;
+	margin: 40px auto 60px auto;
 }
 
 #slogan{
 	font-family: Merriweather Sans;
-	font-size: 1.5em;
-	padding: 20px 0px 70px 0px;
+	font-size: 1.3em;
+	padding: 0px 0px 10px 0px;
 	max-width: 720px;
 }
 
@@ -224,23 +234,29 @@ ul#nav li#nav-register a:hover{
 }
 
 .button{
-	background-color: #0C51A1;
+/* 	border: 2px solid #78C8D0;
+	border-radius: 4px;
+	transition: all 300ms ease-in-out;
+ */	background-color: #f9de59;
 	border: none;
 	border-radius: 4px;
-	color: #fff;
+	color: #000;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
+	font-weight: 500;
 	margin: 0 20px;
-	box-shadow: 2px 2px 2px #E0E0E0;
 	transition: all 300ms ease;
 }
 
 .button:hover{
-	background-color: #E6292A;
-}
+	background-color: #3eba98;
+	border-color: #3eba98;
+	color: #FFF;
+/* 	box-shadow: 0 0 10px 3px #E0E0E0;
+ */}
 
 .map{
 	border:0;
@@ -330,7 +346,7 @@ ul#nav li#nav-register a:hover{
 	width: 100%;
 	margin: 5px;
 	border: 2px solid rgba(255, 255, 255, 0.5);
-	background-color: #E6292A;
+	background-color: #07223D;
 	border-radius: 4px;
 	padding: 10px 15px;
 	box-sizing: border-box;
@@ -343,6 +359,9 @@ ul#nav li#nav-register a:hover{
 }
 
 .input:focus{
+
+	border: 2.3px solid #FFF;
+	color: #FFF;
 	outline: none;
 }
 
@@ -434,6 +453,7 @@ button:hover{
 }
 
 footer{
+	background-color: #07223D;
 	padding: 28px 0;
 	font-size: 1em;
 }
@@ -462,7 +482,18 @@ footer .center{
 	    padding-top: 128px;
 	    margin-top: -64px;
 	}
-	.page_scroll .nav-bar{
+	#home{
+		text-align: center;
+		color: #78C8D0;
+		margin: 50px auto 0 auto;
+		min-height: auto;
+	}
+/* 	#bclogo img{
+		display: block;
+		margin: 50px -120px;
+		width: 170%;	
+	} 
+ */	.page_scroll .nav-bar{
 		display: none;
 	}
 	.page_scroll .nav-bar-mobile{
