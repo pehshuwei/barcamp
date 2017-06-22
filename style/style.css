@@ -131,8 +131,8 @@ nav.page_scroll{
 }
 
 .nav-bar-mobile svg{
-/* 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
- */	width: 24px;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	width: 24px;
 	margin: 0 24px;
 	cursor: pointer;
 }

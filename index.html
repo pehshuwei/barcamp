@@ -55,7 +55,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				<a data-scroll href="#proposed-talks" onClick="toggleDrawer()">Proposed Talks</a>
 				<a data-scroll href="#faq" onClick="toggleDrawer()">FAQ</a>
 				<a data-scroll href="#sponsors" onClick="toggleDrawer()">Sponsors</a>
-				<a href="https://barcamp-cyberjaya-2017.eventbrite.com/?aff=website" target="_blank" onClick="toggleDrawer()" rel="noopener">REGISTER</a>
+				<a href="https://barcamp-cyberjaya-2017.eventbrite.com/?aff=website" target="_blank" onClick="toggleDrawer()" rel="noopener">Register</a>
 			</div>
 			<div class="scrim" onClick="toggleDrawer()"></div>
 		</div>
@@ -84,7 +84,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<div class="nav-bar-mobile">
 			<svg onClick="toggleDrawer()" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
 				<g>
-					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#FFF"></path>
 				</g>
 			</svg>
 		</div>
@@ -94,9 +94,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!-- home -->
 	<div id="home" >
 		<div id="bclogo">
-				<img src="img/homepage.jpg" />
+			<picture>
+				<source media="(max-width: 900px)" srcset="img/homepage-860.jpg">
+				<img src="img/homepage.jpg" alt="homepage"/>
+			</picture>
 		</div>
-		<div id="slogan" class="row">
+	
+<!--  		<div id="bclogo">
+			<img src="homepage-200.jpg" sizes="50vw"
+				srcset="homepage-100.jpg 100w, homepage-200.jpg 200w,
+						homepage-400.jpg 400w, homepage-800.jpg 800w,
+						homepage-1000.jpg 1000w, homepage-1400.jpg 1400w,
+						homepage-1800.jpg 1800w" alt="homepage">
+		</div>
+ -->
+ 		<div id="slogan" class="row">
 			"BarCamp brings people together to share their passion!"
 		</div>
 <!-- 		<div id="home-text" class="row">
