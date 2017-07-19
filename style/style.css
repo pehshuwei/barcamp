@@ -161,7 +161,7 @@ ul#nav li#nav-register a:hover{
 	color: #78C8D0;
 }
 .sub{
-	color:  #757575;
+	color:  #78909C;
 }
 #home{
 	text-align: center;
@@ -206,10 +206,7 @@ ul#nav li#nav-register a:hover{
 	z-index: 2;
 }
 .button{
-/* 	border: 2px solid #78C8D0;
-	border-radius: 4px;
-	transition: all 300ms ease-in-out;
- */	background-color: #f9de59;
+	background-color: #f9de59;
 	border: none;
 	border-radius: 4px;
 	color: #000;
@@ -226,11 +223,11 @@ ul#nav li#nav-register a:hover{
 	background-color: #9f53db;
 	border-color: #9f53db;
 	color: #FFF;
-/* 	box-shadow: 0 0 10px 3px #E0E0E0;
- */}
+}
  .description{
  	font-size: 2em;
  	text-align: center;
+ 	color: #263238;
  }
 .map{
 	border:0;
@@ -365,90 +362,94 @@ button:hover{
 	text-align: center;
 	font-weight: normal;
 }
-
 .center a{
 	display: inline-block;
 }
-th, td{
-	border-bottom: 1px solid #E0E0E0;
-	padding: 13px 20px;
+.agenda{
+ 	border-top: 1px solid #B0BEC5;
+}
+.agenda-row{
+/* 	width: 100%;
+ */	display: flex;
+	border-bottom: 1px solid #B0BEC5;
 	text-align: left;
-	font-size: 1em;
 }
-table{
-	border-collapse: collapse;
-	width: 100%;
-}
-th{
-	font-weight: normal;
-	color: #ff6d56;
-}
-.time{
+.agenda-time{
 	font-size: 1.2em;
+	color: #FF6D56;
+ 	width: 100px;
+	padding: 10px 30px;
+	align-items: center;
+	display: flex;
+ }
+.agenda-items{
+	width: 100%;
+	display: flex;
+ 	padding: 10px;
+}
+.agenda-item{
+ 	margin: auto;
+ 	display: flex;
+ 	flex-direction: column;
+}
+.agenda-title{
+	color: #37474F;
+}
+.agenda-room{
+	text-align: right;
+	font-size: 0.8em;
 	color: #42cdb2;
 }
 #faq{
 	border-bottom: 1px solid #E0E0E0;
 }
-
 #sponsors{
 	background-color: #FAFAFA;
 }
-
 .logo-list{
 	width: 70%;	
 	margin:  0 auto;
 	text-align: center;
 }
-
 .logo{
 	width: 24%;
 	display: inline-block;
 	margin: 30px;
 }
-
 .logo a{
 	text-decoration: none;
 }
-
 .logo img{
 	vertical-align: middle;
 	width: 90%;
 	margin:  0px 20px;
 }
-
 .logo img:hover{
 	opacity:  0.7;
 }
-
 #sponsors .border-btn{
 	margin-bottom: 24px;
 }
-
 #sponsors .small{
 	color:  #E6292A;
 	font-weight: 400;
 	margin: 32px auto 20px auto;
 }
-
 footer{
 	background-color: #07223D;
 	padding: 28px 0;
 	font-size: 1em;
 }
-
 footer a{
 	font-weight: 400;
 	text-decoration: none;
 	color: rgba(255,255,255,0.8);
 	transition: color 300ms ease-in-out;
 }
-
 footer a:hover{
 	font-weight: 500;
 	color: rgba(255,255,255,1);
 }
-
 footer .center{
 	font-weight: 300;
 	font-size: 14px;
@@ -461,6 +462,7 @@ footer .center{
 	    padding-top: 128px;
 	    margin-top: -64px;
 	}
+
 	#home{
 		text-align: center;
 		color: #78C8D0;
@@ -559,25 +561,17 @@ footer .center{
 		margin: 0px;
 		width: 100%;
 	}
-	th, td{
-		border-bottom: 1px solid #E0E0E0;
-		padding: 13px 20px;
+	.agenda-row, .agenda-items, .agenda-item{
+		flex-wrap: wrap;
+		flex-direction: column;
 		text-align: left;
-		font-size: 1em;
-		flex-direction: column;
+		margin: 0;
 	}
-	table{
-		border-collapse: collapse;
-		width: 100%;
-		flex-direction: column;
+	.agenda-time{
+		padding:10px;
 	}
-	th{
-		font-weight: normal;
-		color: #ff6d56;
-	}
-	.time{
-		font-size: 1.2em;
-		color: #42cdb2;
+	.agenda-room{
+		padding: 5px;
 	}
 	.logo{
 		width: 40%;
