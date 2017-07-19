@@ -6,19 +6,15 @@ handlers:
 - url: /
   static_files: index.html
   upload: index.html
-  secure: always
 
 - url: /img/(.+)
   static_files: img/\1  
-  upload: img/(.*)     
-  secure: always
+  upload: img/(.*)
 
 - url: /style/(.+)
   static_files: style/\1  
-  upload: style/(.*)  
-  secure: always
+  upload: style/(.*)
 
 - url: /js/(.+)
   static_files: js/\1  
-  upload: js/(.*)   
-  secure: always
+  upload: js/(.*)
