@@ -54,8 +54,13 @@ a{
     z-index: 12;
     background: #07223D;
     -ms-transform: translateX(-302px);
-        transform: translateX(-302px);
+        -webkit-transform: translateX(-302px);
+            transform: translateX(-302px);
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    transition: -webkit-transform 300ms ease-in-out;
+    -o-transition: transform 300ms ease-in-out;
     transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
     padding: 16px 0;
 }
 .drawer .drawer-container a{
@@ -63,6 +68,8 @@ a{
 	display: block;
 	padding: 12px 16px;
 	color: #FFF;	
+	-webkit-transition: background-color 300ms ease-in-out;	
+	-o-transition: background-color 300ms ease-in-out;	
 	transition: background-color 300ms ease-in-out;
 }
 .drawer .drawer-container a:hover{
@@ -75,11 +82,14 @@ a{
     z-index: 11;
     background: rgba(0,0,0,0.5);	
     opacity: 0;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
 }
 .drawer.show .drawer-container{
 	-ms-transform: translateX(0px);
-	    transform: translateX(0px);
+	    -webkit-transform: translateX(0px);
+	        transform: translateX(0px);
 }
 .drawer.show .scrim{
 	opacity: 1;
@@ -147,12 +157,15 @@ ul#nav li#nav-register a:hover{
 	border: 2px solid #78C8D0;
 	border-radius: 4px;
 	padding: 10px 20px;
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 .border-btn:hover{
 	background-color: #6AC4AA;
 	border-color: #6AC4AA;
-	box-shadow: 0 0 10px 3px #E0E0E0;
+	-webkit-box-shadow: 0 0 10px 3px #E0E0E0;
+	        box-shadow: 0 0 10px 3px #E0E0E0;
 }
 .title{
 	color: #07223D;
@@ -199,6 +212,8 @@ ul#nav li#nav-register a:hover{
 	height: 100%;
 	opacity: 0;
 	z-index: 1;
+	-webkit-transition: opacity 800ms;
+	-o-transition: opacity 800ms;
 	transition: opacity 800ms;
 }
 .quoteslide .show{
@@ -217,6 +232,8 @@ ul#nav li#nav-register a:hover{
 	font-size: 16px;
 	font-weight: 500;
 	margin: 0 20px;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
 	transition: all 300ms ease;
 }
 .button:hover{
@@ -264,6 +281,8 @@ ul#nav li#nav-register a:hover{
 	height: 100%;
 	opacity: 0;
 	z-index: 1;
+	-webkit-transition: opacity 800ms;
+	-o-transition: opacity 800ms;
 	transition: opacity 800ms;
 }
 .slides .show {
@@ -290,6 +309,8 @@ ul#nav li#nav-register a:hover{
 	width: 100%;
 	height: 100%;
 	z-index: 3;
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 	cursor: pointer;	
 	line-height: 500px;
@@ -311,11 +332,14 @@ ul#nav li#nav-register a:hover{
 	background-color: #07223D;
 	border-radius: 4px;
 	padding: 10px 15px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 .input:hover{
 	border: 2.3px solid #78C8D0;
 	color: #6AC4AA;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 .input:focus{
@@ -332,6 +356,8 @@ button, #view a{
 	text-align: center;
 	margin: 15px 5px;
 	border: 3px solid rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 
@@ -370,7 +396,7 @@ button:hover{
 }
 .agenda-row{
 /* 	width: 100%;
- */	display: flex;
+ */	display: -webkit-box;	display: -ms-flexbox;	display: flex;
 	border-bottom: 1px solid #B0BEC5;
 	text-align: left;
 }
@@ -379,21 +405,39 @@ button:hover{
 	color: #FF6D56;
  	width: 100px;
 	padding: 10px 30px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
  }
 .agenda-items{
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
  	padding: 10px;
 }
 .agenda-item{
- 	margin: auto;
- 	display: flex;
- 	flex-direction: column;
+ 	padding: 0 12px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .agenda-title{
 	color: #37474F;
+	margin-bottom: 8px;
 }
 .agenda-room{
 	text-align: right;
@@ -444,6 +488,8 @@ footer a{
 	font-weight: 400;
 	text-decoration: none;
 	color: rgba(255,255,255,0.8);
+	-webkit-transition: color 300ms ease-in-out;
+	-o-transition: color 300ms ease-in-out;
 	transition: color 300ms ease-in-out;
 }
 footer a:hover{
@@ -474,13 +520,15 @@ footer .center{
 	}
 	.page_scroll .nav-bar-mobile{
 		display: -ms-flexbox;
+		display: -webkit-box;
 		display: flex;
 		height: 100%;
 	}
 	.button{
 		width: 100%;
 		margin: 6px 0;
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 		display: block;
 	}
 	.row{
@@ -508,16 +556,20 @@ footer .center{
 	}
 	#view a{
 		display: block;
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 	}
 	#nav{
 		float: right;
 		list-style: none;
 		margin: 0;
 		display: -ms-flexbox;
+		display: -webkit-box;
 		display: flex;
 		-ms-flex-flow: row wrap;
-		    flex-flow: row wrap;
+		    -webkit-box-orient: horizontal;
+		    -webkit-box-direction: normal;
+		        flex-flow: row wrap;
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
 	}
@@ -546,7 +598,8 @@ footer .center{
 		min-width: 120px;
 	}
 	.border-btn:hover{
-		box-shadow: 0 0 10px 5px #E0E0E0;
+		-webkit-box-shadow: 0 0 10px 5px #E0E0E0;
+		        box-shadow: 0 0 10px 5px #E0E0E0;
 		color: #FFF;
 		background-color: #E6292A;
 	}
@@ -562,8 +615,12 @@ footer .center{
 		width: 100%;
 	}
 	.agenda-row, .agenda-items, .agenda-item{
-		flex-wrap: wrap;
-		flex-direction: column;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		text-align: left;
 		margin: 0;
 	}

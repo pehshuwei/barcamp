@@ -6,6 +6,7 @@ handlers:
 - url: /
   static_files: index.html
   upload: index.html
+  expiration: "0m"
 
 - url: /img/(.+)
   static_files: img/\1  
