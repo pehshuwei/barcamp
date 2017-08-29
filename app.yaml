@@ -19,3 +19,12 @@ handlers:
 - url: /js/(.+)
   static_files: js/\1  
   upload: js/(.*)
+
+
+- url: /js/(.+)
+  static_files: js/\1  
+  upload: pdf/(.*)
+
+- url: /jack-slide.pdf
+  static_files: jack-slide.pdf
+  upload: jack-slide.pdf
